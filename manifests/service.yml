@@ -4,11 +4,10 @@ metadata:
   name: progate-lion-hackathon-service
   namespace: default
 spec:
-  type: NodePort  # LoadBalancer → NodePort に変更
   selector:
     app: progate-lion-hackathon-app
   ports:
     - protocol: TCP
       port: 80
       targetPort: 3000
-      nodePort: 30080  # 30000-32767の範囲で指定
+  type: LoadBalancer
