@@ -8,6 +8,6 @@ spec:
     app: progate-lion-hackathon-app
   ports:
     - protocol: TCP
-      port: 80
+      port: 443
       targetPort: 3000
   type: LoadBalancer
