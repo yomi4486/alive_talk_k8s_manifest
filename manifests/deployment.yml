@@ -2,6 +2,7 @@ apiVersion: apps/v1
 Kind: Deployment
 metadata:
   name: progate-lion-hackathon-app
+  namespace: default
 spec:
   replicas: 4
   selector:
