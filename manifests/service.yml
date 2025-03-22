@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: progate-lion-hackathon-service
   namespace: default
+  labels:
+    app: progate-lion-hackathon-app
 spec:
   selector:
     app: progate-lion-hackathon-app
