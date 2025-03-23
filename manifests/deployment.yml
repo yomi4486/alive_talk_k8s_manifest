@@ -18,6 +18,5 @@ spec:
       containers:
         - name: progate-lion-hackathon-app
           image: 192730322953.dkr.ecr.us-west-2.amazonaws.com/alive-talk:c52e51d709d4a5295278d7644df6a4b6aa0895b2
-          command: ["yarn", "run", "dev"]
           ports:
             - containerPort: 3000
